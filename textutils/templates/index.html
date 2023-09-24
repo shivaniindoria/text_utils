@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    *{
+        margin:0;
+        background:#dee;
+    }
+    h1{
+        color:white;
+        background: red;
+        text-align:center;
+        border: 2px solid silver;
+       height:50px;
+       padding-top:10px;
+    }
+    h3{
+        margin:25px 5% 10px 5%;
+    }
+    textarea{
+        margin:10px 5% 20px 5%;
+    }
+    div{
+        margin:10px 0 0 10% ;
+    }
+    button{ 
+        background:#bbb;
+        margin:10px 0 0 10% ;
+        border:2px solid gray;
+        padding:5px;
+        text-align:center;
+        width:150px;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text utils</title>
+</head>
+<body>
+    <h1>Text Analyzer</h1><h3>Enter your Text below:
+    </h3>
+    <form action='/analyze' method='get'>
+        <textarea name='text' id="" style='width: 1204px; height: 235px;'></textarea>
+        <div>
+            <input type="checkbox" name='removepunc'>_Remove Punctuation &nbsp;
+            <input type="checkbox" name='uppercase'>_UPPERCASE &nbsp;
+            <input type="checkbox" name='lowercase'>_lowercase &nbsp;
+            <input type="checkbox" name='capitalize'>_Capitalize &nbsp;
+            <input type="checkbox" name='countchar'>_count characters &nbsp;
+            <input type="checkbox" name='countword'>_count words &nbsp;
+            <input type="checkbox" name='linecount'>_count lines &nbsp;
+            <input type="checkbox" name='remnewline'>_remove new lines<br>
+        </div>
+        <button type='submit'>Analyze Text</button>
+</body>
+</html>
